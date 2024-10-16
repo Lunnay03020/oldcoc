@@ -127,7 +127,9 @@ section{
     height: auto;   
 }
 .hero-text a{
-    display: inline-block;
+    width: auto;
+    display: inline-flex;
+    white-space: nowrap;
     color: white;
     background: #7da77d;
     border: 1px solid transparent;
@@ -226,7 +228,7 @@ section{
 }
 @media (max-width:1340px){
     .hero-img img{
-        width: 100%;
+        width: 600px;
         height: auto;
     }
     .hero-text h1{
@@ -235,6 +237,9 @@ section{
     }
     .hero-text h5{
         margin-bottom: 25px;
+    }
+    .hero-text a.ctaa{
+        margin-left: 0px;
     }
 }
 @media (max-width:1195px){
@@ -249,7 +254,7 @@ section{
         text-align: center;
     }
     .hero-img img{
-        width: 560px;
+        width: 500px;
         height: auto;
     }
     .hero{
@@ -260,10 +265,17 @@ section{
     .icons{
         display: none;
     }
+    .hero-text a.ctaa{
+        margin-left: 0px;
+    }
 }
 @media (max-width: 990px){
     #menu-icon{
         display: block;
+    }
+    .hero-img img{
+        width: 1px;
+        display: none;
     }
     .navlist{
         position: absolute;
@@ -290,6 +302,23 @@ section{
 @media (max-width: 680px){
     .hero-img img{
         display: none;
-        transition: all 0.2 ease-out;
     }
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0303039a;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00000075 transparent;
 }
