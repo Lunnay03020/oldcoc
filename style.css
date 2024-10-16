@@ -33,14 +33,6 @@ audio {
     font-weight: 700;
     color: white;
 }
-.logomin{
-    font-size: 10px;
-    font-weight: 700;
-    color: white;
-    position: fixed;
-    left: 175px;
-    top: 75px
-}
 .navlist{
     display: flex;
 }
@@ -113,7 +105,7 @@ section{
 }
 .hero-text h1{
     font-family: 'supercell-magic';
-    font-size: 64px;
+    font-size: 90px;
     line-height: 1;
     color: white;
     margin: 0 0 45px;
@@ -131,7 +123,7 @@ section{
     margin-bottom: 40px;
 }
 .hero-img img{
-    width: 600px;
+    width: 700px;
     height: auto;   
 }
 .hero-text a{
@@ -192,7 +184,7 @@ section{
     border-radius: 30px;
     transition: all .50s ease;
 }
-.scroll-up i:hover{
+.scroll-down i:hover{
     transform: translateY(-5px);
 }
 .scroll-up{
@@ -211,10 +203,6 @@ section{
 }
 .scroll-up i:hover{
     transform: translateY(-5px);
-}
-.scroll-up.active {
-    transform: translateY(-999px);
-    transition: 1 ease;
 }
 @media (max-width:1535px){
     header{
@@ -272,9 +260,6 @@ section{
     .icons{
         display: none;
     }
-    .scroll-down{
-        display: none;
-    }
 }
 @media (max-width: 990px){
     #menu-icon{
@@ -286,7 +271,7 @@ section{
         right: -100%;
         width: 300px;
         height: 40vh;
-        background: #976e69;
+        background: transparent;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -304,7 +289,7 @@ section{
 }
 @media (max-width: 680px){
     .hero-img img{
-        width: 100%;
-        height: auto;
+        display: none;
+        transition: all 0.2 ease-out;
     }
 }

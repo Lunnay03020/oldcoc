@@ -1,13 +1,21 @@
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 let monElementAudio = document.getElementById('musique');
+let scrollToTopBtn = document.getElementById('scrollup');
 
 monElementAudio.volume = 0.25;
 
-menu.onClick = () =>{
+menu.onclick = () =>{
     menu.classList.toggle('bx-x');
     navlist.classList.toggle('open');
 }
+
+scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
 const sr = ScrollReveal ({
     distance:'65px',
