@@ -1,7 +1,6 @@
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 let monElementAudio = document.getElementById('musique');
-let scrollToTopBtn = document.getElementById('scrollup');
 
 monElementAudio.volume = 0.25;
 
@@ -9,13 +8,6 @@ menu.onclick = () =>{
     menu.classList.toggle('bx-x');
     navlist.classList.toggle('open');
 }
-
-scrollToTopBtn.addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
