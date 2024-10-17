@@ -1,7 +1,10 @@
 @font-face {
     font-family: "supercell-magic";
     src: url('fonts/supercell-magic.ttf');
-  }
+}
+html{
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -161,7 +164,7 @@ section{
     padding: 0 9%;
     transform: translateY(-50%);
 }
-.icons i{
+.icon i{
     display: block;
     margin: 26px 0;
     font-size: 24px;
@@ -240,6 +243,7 @@ section{
     }
     .hero-text a.ctaa{
         margin-left: 0px;
+        margin-top: 20px;
     }
 }
 @media (max-width:1195px){
@@ -273,9 +277,25 @@ section{
     #menu-icon{
         display: block;
     }
-    .hero-img img{
-        width: 1px;
-        display: none;
+    #hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+    }
+    #news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+    }
+    #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
     }
     .navlist{
         position: absolute;
@@ -298,27 +318,4 @@ section{
     .navlist.open{
         right: 0;
     }
-}
-@media (max-width: 680px){
-    .hero-img img{
-        display: none;
-    }
-}
-::-webkit-scrollbar {
-    width: 12px;
-}
-::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background: #0303039a;
-    border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #0056b3;
-}
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #00000075 transparent;
 }
